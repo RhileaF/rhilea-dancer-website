@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book Rhilea Finlayson for dance performances, themed costume appearances and dance workshops across Melbourne and surrounding areas.">
+  <meta name="theme-color" content="#100d12">
+  <title>Rhilea Finlayson | Dancer • Performer • Educator</title>
+  <style>
+    :root{--ink:#100d12;--ink2:#19121c;--cream:#fff8f1;--gold:#f0c98c;--pink:#d45ab5;--muted:#c9c0ca;--line:rgba(240,201,140,.3)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ink);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(16,13,18,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:74px}
+    .brand{font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(1.5rem,3vw,2.15rem);color:var(--gold);text-decoration:none;white-space:nowrap}
+    .links{display:flex;gap:clamp(12px,2.5vw,30px);flex-wrap:wrap}
+    .links a{text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;text-decoration:none;color:#f8edf7}
+    .links a:hover,.links a:focus{color:var(--gold)}
+    .hero{position:relative;isolation:isolate;overflow:hidden;min-height:540px;display:flex;align-items:center;background:radial-gradient(ellipse at 78% 48%,rgba(161,30,143,.5),transparent 36%),linear-gradient(120deg,#08070a 0%,#17101c 62%,#3a123b 100%)}
+    .hero:after{content:"";position:absolute;z-index:-1;right:-6%;top:0;width:54%;height:100%;background:linear-gradient(90deg,rgba(16,13,18,.05),rgba(16,13,18,.12)),url('rhilea-costume.jpg') center 35%/cover no-repeat;opacity:.72;clip-path:polygon(22% 0,100% 0,100% 100%,0 100%)}
+    .hero-copy{padding:80px 0;max-width:720px}
+    .eyebrow{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700}
+    h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.98;letter-spacing:-.055em;margin:18px 0;color:var(--gold);font-weight:500}
+    .role{letter-spacing:.23em;text-transform:uppercase;font-size:.9rem}
+    .lead{font-size:clamp(1.1rem,2.3vw,1.4rem);max-width:540px;color:#f3eaf2}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:13px 20px;text-decoration:none;border:1px solid var(--gold);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;transition:.2s}
+    .btn.primary{background:var(--gold);color:var(--ink)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px #0005}
+    section{padding:76px 0}
+    .light{background:var(--cream);color:#211927}
+    .section-head{margin-bottom:30px}
+    h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.1;letter-spacing:.13em;text-transform:uppercase;margin:0 0 14px}
+    .rule{width:90px;height:3px;background:var(--pink);margin:16px 0 22px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+    .about-art{min-height:340px;border-radius:2px;background:linear-gradient(140deg,rgba(20,8,25,.05),rgba(20,8,25,.15)),url('rhilea-ballet.jpg') center/cover;position:relative}
+    .about-art:after{content:"PASSION • PRESENCE • PERFORMANCE";position:absolute;bottom:18px;left:18px;right:18px;background:#100d12df;color:var(--gold);padding:12px;text-align:center;letter-spacing:.12em;font-size:.72rem}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .service{padding:25px 20px;border:1px solid var(--line);background:linear-gradient(155deg,#1b1520,#100d12);min-height:245px}
+    .service .icon{font-size:2rem;color:var(--gold)}
+    .service h3{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;line-height:1.35}
+    .service p{color:var(--muted);font-size:.95rem}
+    .styles-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+    .style-list{list-style:none;padding:0;margin:24px 0 0;columns:2}
+    .style-list li{padding:7px 0;letter-spacing:.13em;text-transform:uppercase;font-size:.86rem}
+    .style-list li:before{content:"✦";color:var(--pink);margin-right:10px}
+    .quote-art{min-height:300px;background:radial-gradient(ellipse at 70% 50%,rgba(211,67,181,.35),transparent 45%),url('rhilea-ballet.jpg') center/cover;display:flex;align-items:end;padding:24px}
+    .quote-art span{font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(2rem,4vw,3.4rem);color:#fff;text-shadow:0 2px 14px #000}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .gallery-item{height:250px;overflow:hidden;background:#211927}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+    .gallery-item:hover img{transform:scale(1.05)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    .contact-card{border:1px solid var(--line);padding:26px;background:#17121b}
+    .contact-card p{color:var(--muted)}
+    .contact-link{color:var(--gold);text-decoration:none;overflow-wrap:anywhere}
+    .socials{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .socials a{border:1px solid var(--gold);padding:10px 14px;text-decoration:none;color:var(--gold);font-size:.85rem}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:#bdb2c0;font-size:.8rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.nav-inner{align-items:flex-start;flex-direction:column;padding:14px 0}.links{gap:14px}.links a{font-size:.68rem}.hero{min-height:500px}.hero:after{width:76%;opacity:.34;clip-path:none}.hero-copy{padding:65px 0}.about-grid,.styles-layout,.contact-grid{grid-template-columns:1fr}.services-grid{grid-template-columns:repeat(2,1fr)}.about-art{min-height:280px}.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:480px){section{padding:54px 0}.links{gap:11px}.links a{letter-spacing:.08em;font-size:.63rem}.services-grid{grid-template-columns:1fr}.service{min-height:0}.gallery-grid{grid-template-columns:1fr 1fr;gap:8px}.gallery-item{height:180px}.style-list{columns:1}.hero{min-height:470px}.role{font-size:.75rem;letter-spacing:.14em}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home">Rhilea Finlayson</a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap"><div class="hero-copy">
+        <div class="eyebrow">Dance • Entertainment • Education</div>
+        <h1>Rhilea<br>Finlayson</h1>
+        <div class="role">Dancer &nbsp; | &nbsp; Performer &nbsp; | &nbsp; Educator</div>
+        <p class="lead">Bringing energy, passion and creativity to every stage.</p>
+        <div class="buttons"><a class="btn primary" href="#contact">Enquire about a booking</a><a class="btn" href="#services">Explore services</a></div>
+      </div></div>
+    </section>
+
+    <section class="light" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <div class="eyebrow" style="color:#a62b91">Meet the performer</div>
+          <h2>About Rhilea</h2><div class="rule"></div>
+          <p>I’m Rhilea, a passionate and versatile dancer with a love for movement, storytelling and live performance. I bring energy, creativity and commitment to every stage, event and studio.</p>
+          <p>From performances at parties and functions to themed costume appearances and dance workshops for students, I love creating memorable experiences and sharing the joy of dance.</p>
+          <p><strong>Available for bookings across Melbourne and surrounding areas.</strong></p>
+        </div>
+        <div class="about-art" role="img" aria-label="Dance performance photography"></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Make your event memorable</div><h2>Performance Services</h2><div class="rule"></div></div>
+        <div class="services-grid">
+          <article class="service"><div class="icon">✦</div><h3>Parties & Private Events</h3><p>Add entertainment, energy and a special touch to birthdays, celebrations and private parties.</p></article>
+          <article class="service"><div class="icon">✧</div><h3>Functions & Special Events</h3><p>Dance performances for functions, themed events, celebrations and community occasions.</p></article>
+          <article class="service"><div class="icon">✺</div><h3>Costume & Character Work</h3><p>Available for themed costume performances, character appearances and event entertainment.</p></article>
+          <article class="service"><div class="icon">✳</div><h3>Dance Workshops</h3><p>Workshops for students to build technique, confidence, creativity and a love of movement.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="light" id="styles">
+      <div class="wrap styles-layout">
+        <div><div class="eyebrow" style="color:#a62b91">Movement in many forms</div><h2>Dance Styles</h2><div class="rule"></div>
+          <p>Versatile training and performance across a range of dance styles.</p>
+          <ul class="style-list"><li>Contemporary</li><li>Commercial</li><li>Theatrical</li><li>Ballet</li><li>Hip hop</li><li>Jazz</li><li>Technique</li></ul>
+        </div>
+        <div class="quote-art" role="img" aria-label="Expressive dance movement"><span>Let’s create<br>something special.</span></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">On stage and beyond</div><h2>Gallery</h2><div class="rule"></div><p>A glimpse of Rhilea’s dance and character performance work.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="rhilea-costume.jpg" alt="Live performance stage"></div>
+          <div class="gallery-item"><img src="rhilea-ballet.jpg" alt="Dancer performing"></div>
+          <div class="gallery-item"><img src="rhilea-costume.jpg" alt="Dance performance under stage lights"></div>
+          <div class="gallery-item"><img src="rhilea-ballet.jpg" alt="Expressive movement"></div>
+          <div class="gallery-item"><img src="rhilea-ballet.jpg" alt="Dance and movement practice"></div>
+          <div class="gallery-item"><img src="rhilea-costume.jpg" alt="Stage performance"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div><div class="eyebrow">Let’s talk</div><h2>Get in Touch</h2><div class="rule"></div>
+          <p>Planning a party, function, themed event or workshop? Get in touch to discuss your ideas, dates and booking requirements.</p>
+          <p><strong>Location:</strong> Melbourne and surrounding areas</p>
+          <p><strong>Bookings:</strong> Performances, costume work and student workshops</p>
+        </div>
+        <div class="contact-card">
+          <h3>Booking enquiries</h3>
+          <p>Add your preferred email address and social links below before publishing.</p>
+          <!-- Replace the placeholder email and social URLs with Rhilea's details. -->
+          <p><strong>Email:</strong> <a class="contact-link" href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></p>
+          <div class="socials">
+            <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          </div>
+          <p style="font-size:.82rem;margin-top:20px">For a booking enquiry, include your event date, location, type of performance and any costume or workshop requirements.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> Rhilea Finlayson</span><span>Dancer • Performer • Educator</span><span>Melbourne & surrounding areas</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
